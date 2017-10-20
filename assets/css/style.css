@@ -1,0 +1,14 @@
+/*GENERAL:*/
+body {
+	background-image: url("../images/paper/paper.png");
+}
+/*TOP:
+header, nav*/
+header {
+	background-color: #fff;
+	color: #777;
+}
+.name {
+	background-color: #4aaaa5;
+	display: inline-block;
+}
