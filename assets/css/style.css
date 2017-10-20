@@ -1,7 +1,19 @@
 /*GENERAL:*/
+html, body {
+	height: 100%;
+}
+/*flexbox: 
+column, have bulk div for .content so it grows and footer sticks*/
 body {
 	background-image: url("../images/paper/paper.png");
+	display: flex;
+	flex-direction: column;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+h1, h2, h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
 /*TOP:
 header, nav*/
 header {
@@ -11,4 +23,34 @@ header {
 .name {
 	background-color: #4aaaa5;
 	display: inline-block;
+}
+
+/*BULK BODY:
+sections, main, aside*/
+aside {
+	background-color: #fff;
+	border: 1px solid #dddddd;
+	float: right;
+	margin: 1em;
+	padding: 1em 1em 3em 1em;
+}
+
+aside li {
+	display: inline;
+}
+
+/*Flexbox here:*/
+.content {
+	flex: 1 0 auto;
+}
+/*BOTTOM:
+footer*/
+footer {
+	background-color: rgb(102, 102, 102);
+	color: #fff;
+	padding: 2em;
+}
+footer p {
+	font-size: 0.75em;
+	text-align: center;
 }
