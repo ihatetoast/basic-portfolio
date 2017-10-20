@@ -1,10 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Katy Cassidy | IHT</title>
-</head>
-<body>
-	
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Katy Cassidy | IHT</title>
+		<meta name=viewport” content="width=device-width">
+		<meta name="description" content="Katy Cassidy's UI, frontend, and fullstack portfolio as IHateToast.">
+		<meta name="keywords" content="portfolio, web development, frontend, fullstack, javascript, react, node, MERN">
+		<meta name=“author" content=“Katy Cassidy | ihatetoast">
+	</head>
+	<script src="https://use.fontawesome.com/9ea2d86206.js"></script>
+	<body>
+		<!-- 
+		*********************************************************
+		*********************************************************
+		HEADER: 
+		contains div of name and logo, nav with links
+		*********************************************************
+		*********************************************************
+ 		-->
+ 		<!-- todo: undo the inline img styling -->
+		<header>
+			<div class="container">
+				<div class="brand">
+					<h1>Katy Cassidy</h1>
+					<img id="ihtLogo" src="./assets/images/ihtLogo.png" alt="greyhound eating toast" width=100>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="./index.html">about</a></li>
+						<li><a href="./portfolio.html">portfolio</a></li>
+						<li><a href="./contact.html">contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- 
+		*********************************************************
+		*********************************************************
+		SECTION: 
+		contains two columns: main about and side box
+		*********************************************************
+		*********************************************************
+ 		-->
+		<section id="main">
+			<div class="container">
+				<article class="about-col">
+					<h2>About</h2>
+					<img src="./assets/images/selfportrait.jpg" alt="photo of woman holding up phone" width=200>
+					<p>Ne’ermind soft lad th’art nesh thee gi’ o’er ah’ll box thi ears shurrup. Tha knows wacken thi sen up cack-handed nay lad gi’ o’er ne’ermind. Ee by gum. Tintintin ah’ll box thi ears aye tha what ne’ermind big girl’s blouse. Nay lad tintintin face like a slapped arse what’s that when it’s at ooam. Michael palin ah’ll gi’ thee a thick ear. </p>
+
+					<p>By ‘eck that’s champion mardy bum mardy bum t’foot o’ our stairs appens as maybe. Will ‘e ‘eckerslike. Big girl’s blouse nay lad tha knows. Eeh ah’ll gi’ thee a thick ear. Where there’s muck there’s brass. Shurrup where there’s muck there’s brass. Aye. T’foot o’ our stairs cack-handed where’s tha bin. Soft lad.</p>
+				</article>
+				<aside>
+					<div class="title">
+						<h3>Connect with Me</h3>
+						<ul>
+							<li><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></li>
+							<li><i class="fa fa-stack-overflow fa-3x" aria-hidden="true"></i></li>
+							<li><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+		</section>
+		
+		<!-- 
+		*********************************************************
+		*********************************************************
+		FOOTER: 
+		contains copyright and name
+		bonus: make sticky
+		*********************************************************
+		*********************************************************
+ 		-->
+		<footer>
+			<p>Katy Cassidy | ihatetoast | &copy;copyright2017</p>
+		</footer>
+	</body>
 </html>
