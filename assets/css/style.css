@@ -1,4 +1,7 @@
 /*GENERAL:*/
+* {
+	box-sizing: border-box;
+}
 html, body {
 	height: 100%;
 }
@@ -16,12 +19,20 @@ h1, h2, h3 {
 a {
 	text-decoration: none;
 }
-
+hr {
+	border-color: rgb(198, 177, 199);
+}
 /*.container {
 	width: 960px;
 }*/
 /*TOP:
-header, nav*/
+*********************************************************
+*********************************************************
+HEADER: 
+contains div of name and logo, nav with links
+*********************************************************
+*********************************************************
+*/
 header {
 	align-items: flex-end;
 	background-color: rgb(245, 248, 250);
@@ -33,10 +44,10 @@ header {
 	background-color: rgb(101, 46, 103);
 	color: rgb(245, 248, 250);
 	display: inline-block;
-	font-size: 1.5em;
+	font-size: 2em;
 	margin-left: 3em;
 	letter-spacing: 0.1em;
-	padding: 1em;
+	padding: 0.75em;
 }
 #ihtLogo {
 	margin-bottom: -25px;
@@ -62,22 +73,50 @@ nav {
 	color: rgb(101, 46, 103);
 	text-shadow: 0px 0px 1px rgb(227, 216, 227);
 }
+
+
 /*BULK BODY:
-sections, main, aside*/
+*********************************************************
+*********************************************************
+SECTION: 
+contains two columns: main about and side box
+*********************************************************
+*********************************************************
+*/
+.aboutContent, aside {
+		margin-top: 2em;
+		box-shadow: inset 0px 0px 25px -2px rgb(151, 145, 159);
+}
+.aboutContent {
+	background-color: rgb(245, 248, 250);
+	float: left;
+	margin-left: 6em;
+	padding: 1.5em;
+	width: 50%;
+}
+.aboutContent h2 {
+	color: rgb(101, 46, 103);
+	font-size: 2em;
+}
 aside {
 	background-color: rgb(245, 248, 250);
-	border: 1px solid rgb(151, 145, 159);
-	/*color: rgb(101, 46, 103);*/
-	float: right;
-	margin: 1em;
-	padding: 1em 1em 3em 1em;
+	float: left;
+	margin-left: 2em;
+	padding: 1.5em;
+	text-align: center;
 }
-
 aside li {
 	display: inline;
 }
+.title h3 {
+	color: rgb(101, 46, 103);
+	font-size: 1.5em;
+}
+.title hr {
+	border-width: 1px;
+}
 .icons {
-	margin: 0.25em 0.5em;
+	margin: 0.2em 0.1em;
 }
 #gitHub {
 	color: rgb(0,0,0);
