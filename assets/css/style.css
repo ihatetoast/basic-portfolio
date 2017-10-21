@@ -13,23 +13,61 @@ body {
 h1, h2, h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
+a {
+	text-decoration: none;
+}
 
+/*.container {
+	width: 960px;
+}*/
 /*TOP:
 header, nav*/
 header {
-	background-color: #fff;
-	color: #777;
+	align-items: flex-end;
+	background-color: rgb(245, 248, 250);
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgb(151, 145, 159);
 }
 .name {
-	background-color: #4aaaa5;
+	background-color: rgb(101, 46, 103);
+	color: rgb(245, 248, 250);
 	display: inline-block;
+	font-size: 1.5em;
+	margin-left: 3em;
+	letter-spacing: 0.1em;
+	padding: 1em;
+}
+#ihtLogo {
+	margin-bottom: -25px;
+	width: 70px;
 }
 
+nav {
+	margin-right: 2em;
+}
+#navLinks li{ 
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+.inactive {
+	color: rgb(198, 177, 199);
+}
+.active {
+	color: rgb(191, 129, 157);
+	font-weight: bold;
+}
+.inactive:hover {
+	color: rgb(101, 46, 103);
+	text-shadow: 0px 0px 1px rgb(227, 216, 227);
+}
 /*BULK BODY:
 sections, main, aside*/
 aside {
-	background-color: #fff;
-	border: 1px solid #dddddd;
+	background-color: rgb(245, 248, 250);
+	border: 1px solid rgb(151, 145, 159);
+	/*color: rgb(101, 46, 103);*/
 	float: right;
 	margin: 1em;
 	padding: 1em 1em 3em 1em;
@@ -38,7 +76,18 @@ aside {
 aside li {
 	display: inline;
 }
-
+.icons {
+	margin: 0.25em 0.5em;
+}
+#gitHub {
+	color: rgb(0,0,0);
+}
+#stackOverflow {
+	color: rgb(242, 128, 51);
+}
+#linkedIn {
+	color: rgb(0, 123, 181);
+}
 /*Flexbox here:*/
 .content {
 	flex: 1 0 auto;
@@ -46,7 +95,7 @@ aside li {
 /*BOTTOM:
 footer*/
 footer {
-	background-color: rgb(102, 102, 102);
+	background-color: rgb(11, 11, 15);
 	color: #fff;
 	padding: 2em;
 }
