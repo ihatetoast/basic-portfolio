@@ -22,9 +22,11 @@ a {
 hr {
 	border-color: rgb(198, 177, 199);
 }
-/*.container {
+.content {
 	width: 960px;
-}*/
+	margin: 0 auto;
+	flex: 1 0 auto;
+}
 /*TOP:
 *********************************************************
 *********************************************************
@@ -36,8 +38,6 @@ contains div of name and logo, nav with links
 header {
 	align-items: flex-end;
 	background-color: rgb(245, 248, 250);
-	display: flex;
-	justify-content: space-between;
 	border-bottom: 1px solid rgb(151, 145, 159);
 }
 .name {
@@ -53,9 +53,14 @@ header {
 	margin-bottom: -25px;
 	width: 70px;
 }
-
+.brand {
+	float: left;
+	width: 65%;
+}
 nav {
-	margin-right: 2em;
+	float: right;
+	margin-top: 35px;
+	width: 35%;
 }
 #navLinks li{ 
 	float: left;
@@ -98,6 +103,10 @@ contains two columns: main about and side box
 	color: rgb(101, 46, 103);
 	font-size: 2em;
 }
+.aboutContent img {
+	float: left;
+	margin-right: 0.5em;
+}
 aside {
 	background-color: rgb(245, 248, 250);
 	float: left;
@@ -108,15 +117,24 @@ aside {
 aside li {
 	display: inline;
 }
+.iconRowOne ul .icons{
+	margin: 5px 16px;
+}
+.iconRowTwo ul .icons{
+	margin: 5px 16px;
+}
+
 .title h3 {
 	color: rgb(101, 46, 103);
 	font-size: 1.5em;
 }
 .title hr {
 	border-width: 1px;
+	text-align: center;
 }
 .icons {
 	margin: 0.2em 0.1em;
+	float: left;
 }
 #gitHub {
 	color: rgb(0,0,0);
@@ -127,9 +145,21 @@ aside li {
 #linkedIn {
 	color: rgb(0, 123, 181);
 }
+#twitter {
+	color: rgb(0, 172, 237);
+}
+#wordPress {
+	color: 	rgb(33, 117, 155);
+}
+#codePen {
+	color: rgb(0,0,0);
+}
 /*Flexbox here:*/
 .content {
 	flex: 1 0 auto;
+}
+.clear {
+	clear: both;
 }
 /*BOTTOM:
 footer*/
