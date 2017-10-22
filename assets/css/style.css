@@ -117,16 +117,20 @@ aside {
 aside li {
 	display: inline;
 }
-.iconRowOne ul .icons{
-	margin: 5px 16px;
+
+.iconRowOne ul li{
+	float: left;
+	padding: 0.2em 1em;
 }
-.iconRowTwo ul .icons{
-	margin: 5px 16px;
+.iconRowTwo ul li{
+	float: left;
+	padding: 0.2em 1em;
 }
 
 .title h3 {
 	color: rgb(101, 46, 103);
 	font-size: 1.5em;
+
 }
 .title hr {
 	border-width: 1px;
