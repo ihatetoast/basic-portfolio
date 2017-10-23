@@ -21,11 +21,11 @@ a {
 }
 hr {
 	border-color: rgb(198, 177, 199);
+	margin: 1em 0 1.5em 0;
 }
 .content {
 	width: 960px;
 	margin: 0 auto;
-	flex: 1 0 auto;
 }
 /*TOP:
 *********************************************************
@@ -45,7 +45,6 @@ header {
 	color: rgb(245, 248, 250);
 	display: inline-block;
 	font-size: 2em;
-	margin-left: 3em;
 	letter-spacing: 0.1em;
 	padding: 0.75em;
 }
@@ -95,9 +94,8 @@ contains two columns: main about and side box
 .aboutContent {
 	background-color: rgb(245, 248, 250);
 	float: left;
-	margin-left: 6em;
 	padding: 1.5em;
-	width: 50%;
+	width: 60%;
 }
 .aboutContent h2 {
 	color: rgb(101, 46, 103);
@@ -168,11 +166,70 @@ aside li {
 /*BOTTOM:
 footer*/
 footer {
-	background-color: rgb(11, 11, 15);
+	background-color: rgb(198, 177, 199);
 	color: #fff;
-	padding: 2em;
+	padding: 1.5em;
+	border-top: 4px solid  rgb(101, 46, 103);
 }
 footer p {
 	font-size: 0.75em;
 	text-align: center;
 }
+
+/*
+************************************************
+************************************************
+                  CONTACT PAGE
+************************************************
+************************************************
+*/
+
+label {
+	color: rgb(151, 145, 159);
+	display: block;
+	margin: 0.75em 0 0.25em 0;
+}
+
+input, textarea {
+	width: 100%;
+	font-size: 1em;
+}
+
+#subBtn {
+	background-color: rgb(101, 46, 103);
+	color: rgb(245, 248, 250);
+	font-size: 1em;
+	margin-top: 0.75em;
+  padding: 0.75em 1.5em;
+  border-width: 0;
+}
+#subBtn:hover {
+	background-color: rgb(198, 177, 199);
+	color: rgb(101, 46, 103);
+}
+/*
+************************************************
+************************************************
+               PORTFOLIO PAGE
+************************************************
+************************************************
+*/
+.projectPic {
+	display: inline-block;
+	position: relative;
+	width: 15em;
+	height: 12em;
+	overflow: hidden;
+}
+.projectPic img {
+	width: 100%;
+}
+.projectTitle {
+	background-color: rgb(101, 46, 103);
+	padding: 1em;
+	position:absolute;
+	bottom: 5%;
+	width: 100%;
+	text-align: center;
+}
+
