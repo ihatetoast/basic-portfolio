@@ -19,6 +19,9 @@ h1, h2, h3 {
 a {
 	text-decoration: none;
 }
+p {
+	margin: 1em 0.5em;
+}
 hr {
 	border-color: rgb(198, 177, 199);
 	margin: 1em 0 1.5em 0;
@@ -83,7 +86,7 @@ nav {
 *********************************************************
 *********************************************************
 SECTION: 
-contains two columns: main about and side box
+contains two columns: main about and an aside
 *********************************************************
 *********************************************************
 */
@@ -103,10 +106,10 @@ contains two columns: main about and side box
 }
 .aboutContent img {
 	float: left;
-	margin-right: 0.5em;
+	margin-right: 1em;
 }
 aside {
-	background-color: rgb(245, 248, 250);
+	background-color: rgb(233, 230, 237);
 	float: left;
 	margin-left: 2em;
 	padding: 1.5em;
@@ -141,8 +144,8 @@ aside li {
 #gitHub {
 	color: rgb(0,0,0);
 }
-#stackOverflow {
-	color: rgb(242, 128, 51);
+#dribbble {
+	color: #ea4c89;
 }
 #linkedIn {
 	color: rgb(0, 123, 181);
@@ -168,7 +171,7 @@ footer*/
 footer {
 	background-color: rgb(198, 177, 199);
 	color: #fff;
-	padding: 1.5em;
+	padding: 0.6em;
 	border-top: 4px solid  rgb(101, 46, 103);
 }
 footer p {
@@ -214,22 +217,45 @@ input, textarea {
 ************************************************
 ************************************************
 */
+
+.projectHolder {
+	text-align: center;
+}
 .projectPic {
 	display: inline-block;
 	position: relative;
 	width: 15em;
 	height: 12em;
+	margin: 1em 0.5em;
 	overflow: hidden;
 }
 .projectPic img {
 	width: 100%;
 }
-.projectTitle {
+.projectTitleBar0 {
 	background-color: rgb(101, 46, 103);
+	opacity: 0.8;
 	padding: 1em;
 	position:absolute;
 	bottom: 5%;
 	width: 100%;
+	height: 3em;
+	z-index: 0;
+}
+.projectTitleBar1 {
+	position: absolute;
 	text-align: center;
+	font-size: 1.5em;
+	top: 76.7%;
+	width: 100%;
+	z-index: 1;
 }
 
+.projectTitleBar1 span {
+	color: rgb(245, 248, 250);
+	opacity: 1;
+	font-size: 0.9em;
+}
+.projectTitleBar1 span:hover {
+	color: rgb(218, 185, 41);
+}
