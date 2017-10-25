@@ -223,6 +223,7 @@ input, textarea {
 }
 .projectPic {
 	display: inline-block;
+	box-shadow: 2px 2px 15px 1px #ccc;
 	position: relative;
 	width: 15em;
 	height: 12em;
